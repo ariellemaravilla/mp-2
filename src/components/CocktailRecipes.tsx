@@ -93,7 +93,8 @@ export default function CocktailRecipes(props : { drink:Cocktail[] }) {
                         </DrinkText>
                     </DrinkDiv>
             ))}
-                <footer>Created by Arielle Maravilla</footer>
+                <br />
+                <p>Created by Arielle Maravilla</p>
             </DrinkGrid>
         </>
     );

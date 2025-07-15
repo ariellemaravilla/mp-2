@@ -7,7 +7,7 @@ import type {Cocktail} from "./interfaces/Cocktails";
 
 const PageWrapper=styled.div`
     background-color: #E6F0E5;
-    height: 90vw;
+    height: auto;
     width: 85%;
     margin: 0 auto;
     padding: 0;
