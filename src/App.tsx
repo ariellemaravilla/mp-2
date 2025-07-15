@@ -1,8 +1,20 @@
 import CocktailRecipes from "./components/CocktailRecipes.tsx";
-// import styled from "styled-components";
+import styled from "styled-components";
 import {useEffect, useState} from "react";
 import type {Cocktail} from "./interfaces/Cocktails";
 
+// ----- Global Styling -----
+
+const PageWrapper=styled.div`
+    background-color: #E6F0E5;
+    height: 90vw;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    border: 2px solid #8D9A86;
+`;
+
+// ----- Main Logic -----
 export default function App() {
     const [drink, setDrink] = useState<Cocktail[]>([]);
 
@@ -18,7 +30,9 @@ export default function App() {
     }, [drink.length]);
 
     return (
-        <CocktailRecipes drink={drink}/>
+        <PageWrapper>
+            <CocktailRecipes drink={drink}/>
+        </PageWrapper>
         // <>
         //     {
         //         drink.map((item: Cocktail) =>
